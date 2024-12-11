@@ -24,22 +24,22 @@ To run this project, install the required Python packages using the following co
 Run the following scripts to preprocess the data:
 
 ```bash
-python preprocess_math.py
-python preprocess_text.py
+!python preprocess_math.py
+!python preprocess_text.py
 ```
 
 ### Teacher Model Inference
 Perform inference with the teacher model:
 
 ```bash
-python inference_llama32.py
+!python inference_llama32.py
 ```
 
 ### LLM Supervised Fine-Tuning
 Fine-tune the student model:
 
 ```bash
-python trainer_v.py
+!python trainer_v.py
 ```
 
 ### Evaluation
