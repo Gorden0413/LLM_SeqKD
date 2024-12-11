@@ -1,2 +1,54 @@
-# LLM_SeqKD
-An implementation of sequential KD for LLM
+# EEP 596 Final Project: LLM Knowledge Distillation
+
+This project is the final submission for the **EEP 596** course. Our team members are **Kuang-Ming Chen** and **Mike Huang**, and our project focuses on **LLM Knowledge Distillation**.
+
+## Installation
+
+To run this project, install the required Python packages using the following commands:
+
+```bash
+!pip install bitsandbytes==0.43.0
+!pip install datasets==2.10.1
+!pip install transformers==4.38.2
+!pip install peft==0.9.0
+!pip install sentencepiece==0.1.99
+!pip install -U accelerate==0.28.0
+!pip install colorama==0.4.6
+!pip install fsspec==2023.9.2
+!pip install trl
+```
+
+## Workflow
+
+### Data Preprocessing
+Run the following scripts to preprocess the data:
+
+```bash
+python preprocess_math.py
+python preprocess_text.py
+```
+
+### Teacher Model Inference
+Perform inference with the teacher model:
+
+```bash
+python inference_llama32.py
+```
+
+### LLM Supervised Fine-Tuning
+Fine-tune the student model:
+
+```bash
+python trainer_v.py
+```
+
+### Evaluation
+Use the LM-Eval(https://github.com/EleutherAI/lm-evaluation-harness) repository for evaluation:
+
+```bash
+lm_eval --model hf \
+    --model_args pretrained=model_path,tokenizer="meta-llama/Llama-3.2-1B-Instruct" \ 
+    --tasks mathqa \ 
+    --device cuda:0 \
+    --batch_size 8
+```
