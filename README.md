@@ -60,8 +60,8 @@ The table below summarizes the accuracy results on the MathQA dataset for differ
 | Model                            | Fine-tune Type              | Description           | Accuracy |
 |----------------------------------|-----------------------------|-----------------------|----------|
 | Llama-3.2-3B-Instruct (LoRA)     | Math_Hard Baseline 4        | Baseline              | 0.3534   |
-| Llama-3.2-3B-Instruct-Baseline   | Math_Hard Baseline 3        | Baseline              | 0.3451   |
+| Llama-3.2-3B-Instruct   | Math_Hard Baseline 3        | Baseline              | 0.3451   |
 | Llama-3.2-1B-Instruct (LoRA)     | Math_Hard_inf Our Method    | Proposed Method       | 0.3333   |
 | Llama-3.2-1B-Instruct (LoRA)     | Math_Hard Baseline 2        | Baseline              | 0.3303   |
-| Llama-3.2-1B-Instruct-Baseline   | Math_Hard Baseline 1        | Baseline              | 0.3283   |
+| Llama-3.2-1B-Instruct   | Math_Hard Baseline 1        | Baseline              | 0.3283   |
 
