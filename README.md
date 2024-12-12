@@ -39,7 +39,7 @@ Use the LM-Eval(https://github.com/EleutherAI/lm-evaluation-harness) repository 
 
 ```bash
 lm_eval --model hf \
-    --model_args pretrained=model_path,tokenizer="meta-llama/Llama-3.2-1B-Instruct" \ 
+    --model_args pretrained=./test_merge_1B,tokenizer="meta-llama/Llama-3.2-1B-Instruct" \ 
     --tasks mathqa \ 
     --device cuda:0 \
     --batch_size 8
