@@ -45,7 +45,7 @@ lm_eval --model hf \
     --batch_size 8
 ```
 
-## Experiment Results & Expected Output
+## Experiment Results & Expected Output(The result of our method will show on terminal)
 
 The table below summarizes the accuracy results on the MathQA dataset for different models and fine-tuning strategies:
 
