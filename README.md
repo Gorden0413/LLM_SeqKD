@@ -59,6 +59,9 @@ The table below summarizes the accuracy results on the MathQA dataset for differ
 
 ## Pre-trained Model Link
 
+Download here https://drive.google.com/file/d/13kvAtA6-oDNp4BtxErLDImahif94PSHx/view?usp=sharing
+
+
 ## Acknowledgments
  https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8c32f949b04c8cf
  https://huggingface.co/datasets/lighteval/MATH-Hard
