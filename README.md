@@ -32,14 +32,14 @@ Run the following scripts to preprocess the data:
 Perform inference with the teacher model:
 
 ```bash
-!python inference_llama32.py
+!python main_inference.py
 ```
 
 ### LLM Supervised Fine-Tuning
 Fine-tune the student model:
 
 ```bash
-!python trainer_v.py
+!python main.py
 ```
 
 ### Evaluation
