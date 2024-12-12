@@ -7,15 +7,7 @@ This project is the final submission for the **EEP 596** course. Our team member
 To run this project, install the required Python packages using the following commands:
 
 ```bash
-!pip install bitsandbytes==0.43.0
-!pip install datasets==2.10.1
-!pip install transformers==4.38.2
-!pip install peft==0.9.0
-!pip install sentencepiece==0.1.99
-!pip install -U accelerate==0.28.0
-!pip install colorama==0.4.6
-!pip install fsspec==2023.9.2
-!pip install trl
+!pip install requirement.txt
 ```
 
 ## Workflow
@@ -53,7 +45,7 @@ lm_eval --model hf \
     --batch_size 8
 ```
 
-## Experiment Results
+## Experiment Results & Expected Output
 
 The table below summarizes the accuracy results on the MathQA dataset for different models and fine-tuning strategies:
 
@@ -65,3 +57,11 @@ The table below summarizes the accuracy results on the MathQA dataset for differ
 | Llama-3.2-1B-Instruct (LoRA)     | Math_Hard        | Baseline2              | 0.3303   |
 | Llama-3.2-1B-Instruct   | Math_Hard        | Baseline1              | 0.3283   |
 
+## Pre-trained Model Link
+
+## Acknowledgments
+ https://huggingface.co/collections/meta-llama/llama-32-66f448ffc8c32f949b04c8cf
+ https://huggingface.co/datasets/lighteval/MATH-Hard
+ https://math-qa.github.io/
+ https://arxiv.org/pdf/2106.09685
+ https://github.com/EleutherAI/lm-evaluation-harness
